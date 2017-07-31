@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"  >
+  <!--  Font Awesome の CDN  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">-->
+  <link rel="stylesheet" href="css/main.css">
+  <title>dat.GUI を使ったサンプルページ001</title>
+</head>
+<body>
+
+  <header>
+    <h1>dat.GUI を使ったサンプルページ001</h1>
+  </header>
+
+  <div class="well">
+    <a href="http://workshop.chromeexperiments.com/examples/gui/#1--Basic-Usage">dat.GUI</a> を使ったサンプルです。
+    <ul>
+      <li>dat.GUI を使うと、JavaScript内の値を変更するパネルを画面上に作成してくれます。</li>
+    </ul>
+  </div>
+
+  <div class="panel panel-success">
+    <!--<div class="panel-heading">Panel heading without title</div>-->
+    <div class="panel-body lr-container">
+      <div><canvas id="screen"></canvas></div>
+      <div id="lr-dat-container"></div>
+      <div>
+        <ul>
+          <li>x: 画像の中心のX座標</li>
+          <li>y: 画像の中心のY座標</li>
+          <li>scale: 画像の拡大率</li>
+          <li>speed: 1フレームあたりに回る角度[度]</li>
+          <li>※ 背景が薄い黄色の部分が canvas要素になっています。この要素の左上隅が原点(0, 0)となります。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="well">
+    <p>関連情報</p>
+    <ul>
+      <li><a href="https://github.com/dataarts/dat.gui">dataarts/dat.gui: dat.gui is a lightweight controller library for JavaScript.</a></li>
+      <li><a href="http://workshop.chromeexperiments.com/examples/gui/#1--Basic-Usage">dat.GUI</a></li>
+    </ul>
+
+    <p>ソースコードはこちら</p>
+    <ul>
+      <li><a href="https://github.com/laboradian/dat-gui-sample001">laboradian/dat-gui-sample001</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <footer>© 2017 <a href="http://laboradian.com/">Laboradian</a></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>-->
+  <script src="js/dat.gui.min.js"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
